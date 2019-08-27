@@ -1,4 +1,4 @@
-package com.luhuan.cavas.demo;
+package com.luhuan.cavas.demo.menu;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -52,6 +52,8 @@ public class MenuView extends View {
         mHeight = h;
         circleX = mWidth / 2;
         circleY = mHeight / 2;
+        radiusOuter=mWidth/2;
+        radiusInner = mWidth/2*80/200;
         RectF innerRectF = new RectF(
                 circleX - radiusInner,
                 circleY - radiusInner,
